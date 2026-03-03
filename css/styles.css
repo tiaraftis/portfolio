@@ -1,0 +1,367 @@
+/* USE FOR CUSTOM STYLE AND LAYOUT: */
+/* Add or adjust banners for organization */
+/* modern-normalize is taking care of the box-sizing,
+   which is still a standard way to design */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    UTILITIES 
+* * * * * * * * * * * * * * * * * * * * * * * * */
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    TYPOGRAPHY 
+    For larger projects, consider using a type scale:
+    https://baseline.is/tools/type-scale-generator/
+* * * * * * * * * * * * * * * * * * * * * * * * */
+:root {
+    --text-size-xs: 0.69rem;
+    --text-size-sm: 0.83rem;
+    --text-size-md: 1rem;
+    --text-size-lg: 1.2rem;
+    --text-size-xl: 1.44rem;
+    --text-size-2xl: 1.73rem;
+    --text-size-3xl: 2.07rem;
+    --text-size-4xl: 2.49rem;
+    --text-size-5xl: 2.99rem;
+  }
+      
+h1{
+    font-size: var(--text-size-4xl);
+    margin: 1.5em 0 .5em;
+    font-family: "DynaPuff", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h2{
+    font-size: var(--text-size-3xl);
+    font-family: "DynaPuff", system-ui;
+    font-weight: 300;
+    font-style: normal;
+
+}
+h3{
+    font-size: var(--text-size-2xl);
+    font-family: "DynaPuff", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+p, li, a, td {
+    font-family: "DynaPuff", system-ui;
+    font-size: var(--text-size-md);
+    text-decoration: none;
+    max-width: 85%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+li{
+    list-style-type: none;
+    margin: 0 auto;
+}
+figcaption, .caption {
+    font-size: var(--text-size-sm);
+}
+table {
+    padding-top: 10px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+th{
+}
+tr{
+    border-bottom: 1px dotted black;
+    padding-bottom: 8px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "DynaPuff", system-ui;
+    background-color: #241d13;
+    color: rgb(252, 222, 251);
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    STRUCTURE
+* * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    NAV SIDE BAR
+* * * * * * * * * * * * * * * * * * * * * * * * */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+.menu-text {
+    font-size: 12px;
+    display: block;
+    font-size: var(--text-size-m);
+    font-family: "DynaPuff", system-ui;
+
+}
+
+main {
+    transition: margin-left .5s;
+    padding: 0;
+}
+
+
+header {
+    text-align: center;
+    padding: 40px 0 25px 0;
+    background-color: rgb(250, 232, 249);
+    color: black;
+
+}
+
+.polka-dot-header {
+    /* Set a specific size for the header */
+    height: 150px;
+    width: 100%;
+    /* Set the background color of the header */
+    background-color: rgb(250, 232, 249); 
+    /* Create the polka dots */
+    background-image: radial-gradient(circle at center, #241d13 2.5px, transparent 1px);
+    /* Set the size of the polka dot "tile" */
+    background-size: 15px 15px; 
+}
+
+.about-me-header{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(250, 232, 249); /* same color as page background */
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 12px; 
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgb(250, 232, 249);
+    color: black;
+    background-image: radial-gradient(circle at center, #241d13 2.5px, transparent 1px);
+    background-size: 15px 15px; 
+    padding-bottom: 40px;
+
+}
+  
+.footer-name {
+    background-color: rgb(250, 232, 249); /* same color as page background */
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 9px; 
+    line-height: 1;
+    font-weight: bold;
+}
+
+.contact-header{
+    background-color: rgb(250, 232, 249); /* same color as page background */
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 9px; 
+    font-weight: bold;
+    font-size: var(--text-size-2xl);
+
+}
+
+
+.p-email{
+    background-color: rgb(250, 232, 249); /* same color as page background */
+    display: inline-block;
+    padding: 10px 6.5px;
+    border-radius: 9px; 
+    font-size: var(--text-size-lg);
+}
+
+
+
+.s-email{
+    background-color: rgb(250, 232, 249); /* same color as page background */
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 9px; 
+    font-size: var(--text-size-lg);
+}
+
+
+.pn{
+    background-color: rgb(250, 232, 249); /* same color as page background */
+    display: inline-block;
+    padding: 10px 7px;
+    border-radius: 9px; 
+    font-size: var(--text-size-lg);
+}
+
+
+.LI{
+    background-color: rgb(250, 232, 249); /* same color as page background */
+    display: inline-block;
+    padding: 10px 9px;
+    border-radius: 9px; 
+    font-size: var(--text-size-lg);
+    color: #241d13;
+}
+
+.link{
+    text-decoration: underline;
+    color: #241d13;
+
+}
+
+.header{
+    font-weight: bold;
+    font-size: var(--text-size-xl);
+}
+  
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    index.html SPECIFIC STYLES
+* * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+.about-me {
+    padding-top: 70px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;   
+    justify-content: space-between;
+}
+
+/* Picture */
+.about-me-pic {
+    flex: 1 1 auto;
+    min-height: 300px; 
+    background: url(../images/headshot.png) no-repeat center center;
+    background-size: contain;
+    width: 100%;        
+    object-fit: cover;
+    max-width: 200px;   
+    height: auto;       
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+/* Text */
+.about-me-text {
+    flex: 1 1 50%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+@media (width >=768px) {
+    .about-me {
+        flex-direction: row-reverse;
+    }
+
+    .about-me-pic{
+        margin-top: 20px;
+        margin: 0;
+        margin-right: 50px;
+    }
+
+    .about-me-text {
+        margin: 0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.this-page{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    dinner.html SPECIFIC STYLES
+* * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    width: 325px;
+    background-color: rgb(250, 232, 249);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    padding-bottom: 15px;
+    box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 0.7);
+}
+
+.image-card{
+    width: 100%;
+    height: 200px;
+}
+
+.card-text{
+    color: #241d13;
+
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    MEDIA QUERIES 
+* * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (width >=576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (width >=768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (width >=992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (width >=1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (width >=1400px) {}
